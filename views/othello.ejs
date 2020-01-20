@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+  <head>
+    <meta charset="utf-8">
+        <link rel='stylesheet' href='/stylesheets/othello.css' />
+
+<script src=/javascripts/test.js>
+</script>
+    <title></title>
+        <%- include('./header.ejs')%>
+  </head>
+  <body>
+  <center>  <font size=90>おせろしようぜ！</font>
+  <br>
+  <img width=10% height=10% src="http://imgcc.naver.jp/kaze/mission/USER/20190521/13/1085203/40/640x640x0b3104dc5b878da3130c8875.jpg">
+
+</center>
+    <center>
+      <span class=adjust>
+  <% for(var i=1;i<10;i++){
+for(var j=1;j<10;j++){
+
+     %>
+    <span class=board>
+      <% var n=10*i+j %>
+      <a class=stone  id=<%= n%> href=javascript:b.drawboard(<%= n %>) ></a>
+    </span>
+    <%}%>
+    <br>
+    <%}%>
+  </span>
+</center>
+<script>
+
+var b=new board();
+for(var i=0;i<9;i++){
+  for(var j=0;j<9;j++){
+    var turn;
+    if (b.board[i][j]==1){
+      turn="black"
+    }
+    else{
+      if(b.board[i][j]==2){
+        turn="white"
+      }
+      else{
+        turn="green"
+      }
+    }
+    document.getElementById(10*(i+1)+j+1).setAttribute('style','background:'+turn);
+  }
+}
+
+</script>
+<div class=box></div>
+  <!-- <div class="sample">animation効果のサンプル</div> -->
+  <span class=aiueo>こんにちは！</span>
+  <div class=hello></div>
+  </body>
+</html>

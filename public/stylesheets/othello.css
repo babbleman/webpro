@@ -1,0 +1,68 @@
+.board{
+display:inline-block;
+border:solid;
+width:50px;
+height:50px;
+background: green;
+text-align: center;
+}
+
+.stone{
+  top:50%;
+  width: 40px;
+  height:40px;
+  display: inline-block;
+  border-radius: 50%;
+  background:black;
+}
+
+.adjust{
+  position: absolute;
+  top:20%;
+  left:30%;
+
+
+}
+
+@@keyframes anime {
+  0% {width: 60px ;background-color:red;}
+  50%{ width: 234px ; height:60px; background-color: green;}
+  100% {width: 60px ;background-color: red;}
+  }
+
+  div.box{
+    animation-name: anime;
+    animation-duration: 10s;
+  }
+
+  div.sample {
+animation-name: anime1;
+animation-duration: 5s;
+animation-timing-function: ease;
+animation-iteration-count: infinite;
+animation-delay: -2s;
+}
+
+@keyframes anime1 {
+0% {width: 50px; height: 50px; background-color: aqua;}
+100% {width: 200px; height: 50px; background-color: blue;}
+}
+
+.aiueo{
+width:100px;
+height:100px;
+background: black;
+}
+
+.hello{
+width:100px;
+height:100px;
+background:red;
+transition: all 300ms 0s ease;
+}
+
+.hello:hover{
+  background: black;
+  width: 300px;
+
+}
