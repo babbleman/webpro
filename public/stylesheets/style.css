@@ -6,3 +6,11 @@ body {
 a {
   color: #00B7FF;
 }
+
+.board{
+display:inline-block;
+border:solid;
+width:50px;
+height:80px;
+background: green;
+}

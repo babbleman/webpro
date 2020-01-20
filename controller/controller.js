@@ -22,7 +22,7 @@ module.exports={
 
       },
       nextpage: function(req,res,next){
-          res.render(Views+'/next.ejs');
+          res.render(Views+'/othello.ejs');
 
       }
 
