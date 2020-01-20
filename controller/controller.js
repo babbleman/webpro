@@ -7,16 +7,17 @@ var router=require('../routes/index');
 const Views='../views'
 module.exports={
   dosomething: function(req,res,next){
-    usermodel.getuser().then((result)=>{res.render(Views+'/index.ejs',{users:result})});
-    userpromise=usermodel.getuser();
-    userpromise.then(function(result){
-                  res.render(Views+'/index.ejs',{users:result});
-    }
-    )
+    // usermodel.getuser().then((result)=>{res.render(Views+'/index.ejs',{users:result})});
+    // userpromise=usermodel.getuser();
+    // userpromise.then(function(result){
+                  // res.render(Views+'/index.ejs',{users:result});
+    // }
+    // )
+    res.render(Views+'/index.ejs');
   },
     registuser: function(req,res,next){
-        var name=req.body['name'];
-        usermodel.registnew(name);
+        // var name=req.body['name'];
+        // usermodel.registnew(name);
         res.redirect('/');
 
 
